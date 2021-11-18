@@ -146,9 +146,16 @@ img {
 /* Hero */
 
 .hero {
+	max-width: 1600px;
+	margin: 0 auto;
 	padding-top: 200px;
 	padding-bottom: 200px;
+
 	background-color: #2f303a;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .hero-title {
@@ -275,6 +282,32 @@ img {
 	text-align: center;
 }
 
+/* Client */
+
+.clients {
+	display: flex;
+	justify-content: center;
+}
+
+.clients-item {
+	width: 170px;
+	height: 92px;
+	padding: 16px 32px;
+	margin: 0 auto;
+
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+
+.clients-icon {
+	display: block;
+	margin: 0 auto;
+}
+
+.clients-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 /* Footer */
 
 .footer {
@@ -359,6 +392,11 @@ a[href="https://goo.gl/maps/Sd4Lendt8BvaJmYn8"]
 	margin-right: 30px;
 	margin-bottom: 30px;
 	flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.portfolio-item:hover {
+	cursor: pointer;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-post-image {
