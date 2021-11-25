@@ -101,17 +101,13 @@ img {
 	margin-left: auto;
 }
 
-.contacts-item {
-	/* display: flex;
-	align-items: center; */
-}
-
 .contacts-item:not(:last-child) {
 	margin-right: 50px;
 }
 
 .contacts-link {
-	padding-left: 10px;
+	display: flex;
+	align-items: center;
 
 	font-weight: 500;
 	font-size: 14px;
@@ -120,12 +116,10 @@ img {
 
 	color: inherit;
 }
-.contacts-link.envelope::before {
-	content: "";
-	display: inline-block;
-	width: 16px;
-	height: 12px;
-	background-image: url(../images/envelope.svg);
+
+.contacts-icon {
+	fill: currentColor;
+	margin-right: 10px;
 }
 
 .sitenav-link:hover,
