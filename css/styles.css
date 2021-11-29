@@ -286,6 +286,7 @@ img {
 	margin-bottom: 10px;
 
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	text-align: center;
@@ -417,7 +418,7 @@ a[href="https://goo.gl/maps/Sd4Lendt8BvaJmYn8"]
 .footer-right {
 	padding-top: 12px;
 
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
@@ -509,8 +510,14 @@ a[href="https://goo.gl/maps/Sd4Lendt8BvaJmYn8"]
 	flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.portfolio-item:hover {
-	cursor: pointer;
+.portfolio-link {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -534,6 +541,8 @@ a[href="https://goo.gl/maps/Sd4Lendt8BvaJmYn8"]
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
+
+	color: #757575;
 }
 
 .visually-hidden {
